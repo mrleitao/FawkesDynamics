@@ -1,3 +1,47 @@
-#Using R, an open source software we complied our models.
-#R is located at https://www.r-project.org for free download for OSX, linux, and windows 7-10
-#After downloading R, download library(Foreign); library(lavaan); and library(psych) which are all free and available through R.
+## Using R, an open source software we complied our models.
+## R is located at https://www.r-project.org for free download for OSX, linux, and windows 7-10
+## After downloading R, download library(Foreign); library(lavaan); and library(psych) which are all free and available through R.
+
+library(foreign)
+library(lavaan)
+library(psych)
+
+## change the directory to where ever you downloaded the .sav
+data_AllModels = read.spss("C:/Users/danib/Desktop/FALL 2017/DataJam/Wave 1 & Wave 2 final Data.sav", to.data.frame=TRUE)
+
+modelOne_CovMat <- cov(data_AllModels[, c(2,3,4,5,6,7) ], use = "pairwise.complete.obs" )
+nComp1 <- count.pairwise(data_AllModels[, c(2,3,4,5,6,7) ])
+
+
+
+
+model_One <- '
+SoSupFM1~~SELFESTW1
+SCLBELNG2W1~SoSupFM1+SELFESTW1
+COLEXP1~SoSupFM1+SELFESTW1+SCLBELNG2W1
+STRBLW1~SoSupFM1+SELFESTW1+SCLBELNG2W1+COLEXP1
+CGPAT1~SCLBELNG2W1+COLEXP1+STRBLW1+SoSupFM1+SELFESTW1
+'
+
+sem_ModelOne <- sem(model_One,sample.cov=modelOne_CovMat,sample.nobs=min(nComp1))
+sem_ModelOne
+summary(sem_ModelOne,standardized=T,fit=T,rsquare=T)
+
+
+
+modelTwo_CovMat <- cov(data_AllModels[, c(8,9,10,11,12,13) ], use = "pairwise.complete.obs" )
+nComp2 <- count.pairwise(data_AllModels[, c(8,9,10,11,12,13) ])
+
+
+model_Two <- '
+SoSupFM2~~SELFESTW2
+SCLBELNGW2~SoSupFM2+SELFESTW2
+COLEXP2~SoSupFM2+SELFESTW2+SCLBELNGW2
+STRBLW2~SoSupFM2+SELFESTW2+SCLBELNGW2+COLEXP2
+CGPAT2~SCLBELNGW2+COLEXP2+STRBLW2+SoSupFM2
+'
+
+sem_ModelTwo <- sem(model_Two,sample.cov=modelTwo_CovMat,sample.nobs=min(nComp2))
+sem_ModelTwo
+summary(sem_ModelTwo,standardized=T,fit=T,rsquare=T)
+
