@@ -1,0 +1,3 @@
+#Using R, an open source software we complied our models.
+#R is located at https://www.r-project.org for free download for OSX, linux, and windows 7-10
+#After downloading R, download library(Foreign); library(lavaan); and library(psych) which are all free and available through R.
