@@ -9,7 +9,8 @@ For this analysis we used Wave 1 and Wave 2 collections
 
 We joined varibles to create over arching factors (Located in the Factor's tab) to create a predictive model.
 
-We compiled the information using R (Located in the R Code Tab).
+We compiled the information using R (Located in the R Code Tab), 
+and presented the Output (located in R Output).
 
 The rational, importance, and explination of the model and its implications are included in
 the document named 'Place Holder' locaded on the main page.
