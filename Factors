@@ -1,0 +1,42 @@
+We used data what was cleaned and complied for us using the scales and values from in the original data set.
+
+1.Social Support
+     Initial social Support
+     The Variables:
+         H1GH31A, H1GH318B, H1GH31C, H1GH31D, H1GH31F
+      THE CRONBACH'S ALPHA FOR THIS MEASURE WAS 0.61.
+      These were averaged across all the variables to create Initial Social Support.
+     Positive Family Enviornment
+     The Variables:
+         H1PR5R, H1PR6R, H1PR7R, H1PR8R 
+      THE CRONBACH'S ALPHA FOR THIS MEASURE WAS 0.75.
+      These were averaged across all the variables to create Positive Evniornment.
+   Social Support
+    The Variables:
+        Initial Social Support, Positive Family Enviornment
+      THE CRONBACH'S ALPHA FOR THIS MEASURE WAS 0.62.
+      These were summed across all the variables to create Social Support
+2.Self Esteem
+  The Variables:
+      H1PF30, H1PF31, H1PF32, H1PF33, H1PF34, H1PF35, H1PF36
+   THE CRONBACH'S ALPHA FOR THIS MEASURE WAS 0.85
+   These were averaged across all the variables to create Self Esteem.
+3.Trouble In School
+  The Variables:
+      H1ED15, H1ED16, H1ED17, H1ED18
+   THE CRONBACH'S ALPHA FOR THIS MEASURE WAS 0.69. 
+   These were averaged across all the variables to create Trouble In School.
+4.Feelings Of Belonging In School
+  The Variables:
+      S62B, S62E,  S62GR, S62I, S62J, S62R. S62 
+      S62 HAD TO BE REVERSE CODED
+   THE CRONBACH'S ALPHA FOR THIS MEASURE WAS 0.72
+   These were averaged across all the variables to create Feelings Of Belonging In School.
+5.College Hopes and Aspirations
+   The Variables:
+      H1EE1, H1EE2
+    These were summed across all the variables to create College Hopes and Aspirations
+6.GPA Total
+  The Variables:
+      GPA TOTAL IS BASED ON THE REVERSE CODED ITEMS FOR HISTORY, SCIENCE, ENGLISH AND MATH. HIGHER SCORES REFLECT A HIGHER GPA. 
+      
