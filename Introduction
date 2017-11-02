@@ -1,8 +1,15 @@
 Data Jam Csun 2017 - Abnormal Distributions
 
-This project exists to compile and display our findings of the data from the National Longitudinal Study of Adolescent to Adult Health (Add Health), 1994-2008. 
+This project exists to compile and display our findings of the data from the National Longitudinal Study of 
+Adolescent to Adult Health (Add Health), 1994-2008. 
+
 The open source data is located at: http://www.icpsr.umich.edu/icpsrweb/DSDR/studies/21600
+
 For this analysis we used Wave 1 and Wave 2 collections
+
 We joined varibles to create over arching factors (Located in the Factor's tab) to create a predictive model.
+
 We compiled the information using R (Located in the R Code Tab).
-The rational, importance, and explination of the model and its implications are included in the document named 'Place Holder' locaded on the main page.
+
+The rational, importance, and explination of the model and its implications are included in
+the document named 'Place Holder' locaded on the main page.
