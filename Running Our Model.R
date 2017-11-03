@@ -3,7 +3,7 @@ library(lavaan)
 library(psych)
 
 ## change the directory to where ever you downloaded the .sav
-data_AllModels = read.spss("C:/Users/danib/Desktop/FALL 2017/DataJam/Wave 1 & Wave 2 final Data.sav", to.data.frame=TRUE)
+data_AllModels = read.spss("https://github.com/mrleitao/FawkesDynamics/blob/master/Wave%201%20&%20Wave%202%20final%20Data.sav?raw=true", to.data.frame=TRUE)
 
 modelOne_CovMat <- cov(data_AllModels[, c(2,3,4,5,6,7) ], use = "pairwise.complete.obs" )
 nComp1 <- count.pairwise(data_AllModels[, c(2,3,4,5,6,7) ])
